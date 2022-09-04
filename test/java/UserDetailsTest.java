@@ -1,4 +1,3 @@
-import UC10.UserDetails;
 import org.testng.annotations.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -22,14 +21,16 @@ public class UserDetailsTest {
     public void lastNameHappy() {
         UserDetails userDetails = new UserDetails();
         boolean output = UserDetails.validateLastName("Dudhewar");
-        assertEquals(true,output);
+        assertEquals(true, output);
     }
+
     @Test
     public void lastNameSad() {
         UserDetails userDetails = new UserDetails();
         boolean output = UserDetails.validateLastName("dudhewar");
         assertEquals(false, output);
     }
+
     @Test
     public void phoneNumberHappy() {
         UserDetails userDetails = new UserDetails();
